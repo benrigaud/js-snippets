@@ -1,4 +1,4 @@
-// Stick on scroll 
+// Stick when top
 const stickThis = document.querySelector(".element-class");
 const startPosition = stickThis.getBoundingClientRect().top + window.pageYOffset;
 window.onscroll = function() {
