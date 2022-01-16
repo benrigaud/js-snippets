@@ -6,7 +6,6 @@ window.onscroll = function() {
         stickThis.classList.add('stick');
     } else {
         stickThis.classList.remove('stick');
-
     }
 }
 
