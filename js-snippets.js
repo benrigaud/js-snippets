@@ -24,3 +24,10 @@ function scrollIntoView(e) {
         behavior: 'smooth'
     });
 }
+
+// Get youtube thumbnails
+const iframe = document.querySelector('iframe')
+const iframeSrc = iframe.getAttribute('src')
+const youtubeVideoId = iframeSrc.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()
+const videoThumbnail = `<img src="//img.youtube.com/vi/${youtubeVideoId}/0.jpg">`
+document.querySelector(`.video-thumbnail`).innerHTML = videoThumbnail
