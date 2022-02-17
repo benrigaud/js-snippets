@@ -1,2 +1,2 @@
 # js-snippets
-Just saving usefull js snippets
+Snippets i might use again
